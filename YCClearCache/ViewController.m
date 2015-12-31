@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "NSObject+ClearCache.h"
 
 @interface ViewController ()
+
+/** 缓存大小*/
+@property (nonatomic,assign) NSInteger total;
 
 @end
 
@@ -16,12 +20,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    // 获取cachePath文件缓存
+    [self getFileCacheSizeWithPath:self.cachePath completion:^(NSInteger total) {
+        
+        _total = total;
+        
+        NSLog(@"缓存尺寸大小为：%ld",_total);
+        
+    }];
+    
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+
+- (IBAction)clearCache {
+    
+    // 清空缓存,就是把Cache文件夹直接删掉
+    // 删除比较耗时
+    [self removeCacheWithCompletion:^{
+        _total = 0;
+        NSLog(@"缓存尺寸大小为：%ld",_total);
+    }];
 }
 
 @end

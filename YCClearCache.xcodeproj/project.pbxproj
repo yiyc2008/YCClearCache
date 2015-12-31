@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6428CDE1C281B5900E9BD3B /* NSObject+ClearCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B6428CDD1C281B5900E9BD3B /* NSObject+ClearCache.m */; };
 		B6752EC01C281A3F0075AD68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6752EBF1C281A3F0075AD68 /* main.m */; };
 		B6752EC31C281A3F0075AD68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6752EC21C281A3F0075AD68 /* AppDelegate.m */; };
 		B6752EC61C281A3F0075AD68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6752EC51C281A3F0075AD68 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6428CDC1C281B5900E9BD3B /* NSObject+ClearCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ClearCache.h"; sourceTree = "<group>"; };
+		B6428CDD1C281B5900E9BD3B /* NSObject+ClearCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ClearCache.m"; sourceTree = "<group>"; };
 		B6752EBB1C281A3F0075AD68 /* YCClearCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCClearCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6752EBF1C281A3F0075AD68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6752EC11C281A3F0075AD68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 		B6752EBD1C281A3F0075AD68 /* YCClearCache */ = {
 			isa = PBXGroup;
 			children = (
+				B6752ED51C281A650075AD68 /* YCClearCache */,
 				B6752EC11C281A3F0075AD68 /* AppDelegate.h */,
 				B6752EC21C281A3F0075AD68 /* AppDelegate.m */,
 				B6752EC41C281A3F0075AD68 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				B6752EBF1C281A3F0075AD68 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6752ED51C281A650075AD68 /* YCClearCache */ = {
+			isa = PBXGroup;
+			children = (
+				B6428CDC1C281B5900E9BD3B /* NSObject+ClearCache.h */,
+				B6428CDD1C281B5900E9BD3B /* NSObject+ClearCache.m */,
+			);
+			path = YCClearCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +165,7 @@
 			files = (
 				B6752EC61C281A3F0075AD68 /* ViewController.m in Sources */,
 				B6752EC31C281A3F0075AD68 /* AppDelegate.m in Sources */,
+				B6428CDE1C281B5900E9BD3B /* NSObject+ClearCache.m in Sources */,
 				B6752EC01C281A3F0075AD68 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +313,7 @@
 				B6752ED41C281A3F0075AD68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
